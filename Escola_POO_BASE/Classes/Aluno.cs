@@ -25,6 +25,7 @@ namespace Escola_POO_BASE.Classes
         }
         #endregion
 
+      
         #region Métodos
         public void Cadastrar(List<Aluno> alunos)
         {
