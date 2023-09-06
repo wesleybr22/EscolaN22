@@ -55,8 +55,9 @@ namespace Escola_POO_BASE.Telas
             }
         }
 
+        private void TelaLogin_Load(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }

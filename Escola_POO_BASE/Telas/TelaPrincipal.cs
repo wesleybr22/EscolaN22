@@ -42,7 +42,7 @@ namespace Escola_POO_BASE.Telas
             }
 
 
-            LblBoasVindas.Text = $"Bem-Vindo(a), {_userLogado.Nome}!";
+           // LblBoasVindas.Text = $"Bem-Vindo(a), {_userLogado.Nome}!";
             TslNomeUserLogado.Text = _userLogado.Nome;
             TslEmailUserLogado.Text = _userLogado.Email;       
 
@@ -54,13 +54,15 @@ namespace Escola_POO_BASE.Telas
         private void TsiAlterarSenha_Click(object sender, EventArgs e)
         {
             TelaAlterarSenha tlAlterarSenha = new TelaAlterarSenha(_userLogado);
-            tlAlterarSenha.ShowDialog();
+            tlAlterarSenha.MdiParent = this;
+            tlAlterarSenha.Show();
         }
 
         private void TsiCadastraAluno_Click(object sender, EventArgs e)
         {
             TelaCadastraAluno tlCadAluno = new TelaCadastraAluno(_userLogado);
-            tlCadAluno.ShowDialog();
+            tlCadAluno.MdiParent = this;
+            tlCadAluno.Show();
         }
 
         private void TmrRelogio_Tick(object sender, EventArgs e)
